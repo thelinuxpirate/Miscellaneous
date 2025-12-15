@@ -1,13 +1,10 @@
-<<<<<<< HEAD
-# The Wiggler Discord Bot
-A Discord bot built using the [Serenity](https://github.com/serenity-rs/serenity) Discord framework.
-=======
 # Dynamic-Paper
 A dynamic wallpaper setter for Unix systems.
 
 This is the first version of Dynamic-Paper that fully works as intended!
 
 ## Installation
+<!-- not there anymore lmao -->
 Check out the pre-built binary [here](https://github.com/thelinuxpirate/dynamic-paper/releases)
 
 ## Usage
@@ -16,7 +13,7 @@ There are multiple commands for you to use & non of them are dependenant on one-
 $ dynamic-paper --help
 NAME:
    dynamic-paper - Define a wallpaper for the time of day
-
+dynamic
 USAGE:
    dynamic-paper [global options] command [command options]
 
@@ -68,4 +65,3 @@ This release of Dynamic-Paper supports:
 - Activating the program as a daemon (Log & PID file stored in `~/.local/share/dynamic-paper/`)
 - Killing the daemon via command
 - And just run the program as it is
->>>>>>> dynamic-paper/main
