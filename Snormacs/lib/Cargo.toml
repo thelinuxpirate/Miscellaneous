@@ -1,0 +1,15 @@
+[package]
+name = "snormacs-installer" # Snormacs Installer Program
+authors = ["TheLinuxPirate"]
+version = "0.1.0"
+edition = "2021"
+
+[workspace]
+members = [
+				"snormacs-rs", # Snormacs Rust Library
+				"elcord-rs" # Custom Elcord Code in Rust
+				]
+
+[dependencies]
+clap = { version = "4.4.5", features = ["derive"] }
+regex = "1.9.5"
