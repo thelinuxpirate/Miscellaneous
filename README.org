@@ -1,1 +1,12 @@
 #+title: Miscellaneous
+
+* Purpose:
+My GitHub account started to become too crowded with my old projects I was
+working on while I was a teenager.
+
+
+The code is old, ugly, & mostly useless; so I decided to merge it all into one
+repository that would host my old starter work.
+
+** File Structure
+Each directory used to be its own repository which has been deleted since then.
