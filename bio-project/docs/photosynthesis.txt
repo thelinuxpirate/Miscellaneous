@@ -1,0 +1,55 @@
++=================================+
+|< +THIS IS PHOTOSYNTHESIS+ >     |
+| --------------------------      |
+|        \   ^__^                 |
+|         \  (oo)\_______         |
+|            (__)\       )\/\     |
+|                ||----w |        |
+|                ||     ||        |
++=================================+
+➜ Introduction:
+
+ What is Photosynthesis?
+Photosynthesis is a process used by plants and other organisms to convert light energy into chemical energy that,
+through cellular respiration (explained in cellular_respiration.txt), can later be released to fuel the organism's activities.
+
+ What happens during "Photosynthesis"?
+Its more than just one thing that happens during Photosynthesis!
+Photosynthesis is divided into multiple stages demonstrated here:
+
++= Stages of Photosynthesis =+
+(Occurs in the chloroplasts of plant cells)
+
+ Stage 1: Energy is captured from sunlight..
+ Stage 2: The Electron Transport Chain (E.T.C):
+  Light energy is converted to chemical energy.
+              (ATP -> NADHP)
+ Stage 3: The Calvin Cycle (C.C):
+APT and NADHP powers formation of organic compounds using CO2.
+==============================================================
+➜ A Deeper Explanation:
+
+ How does a leaf absorb light?
+You might want a deeper explantion on how energy is captured in the first stage of photosynthesis, well here is some more information:
+    -   Light = Radiation / Pigments - Absorb Wavelenghts
+    -   *Chlorophyll* is the pigment of photosynthesis:
+        -   It absorbs blue, red; Then reflects green.
+
++= STAGES =+
+
+1 - Thylakoids are embedded on the membrane of chloroplasts,
+    and when light strikes thylakoids the light causes electrons to become somewhat "excited".
+    Those electrons are then used to power the 2nd stage of photosynthesis which will be explained right now:
+
+2 - Those electrons from stage 1 are then replaced by "splitting water".
+    Then the "excited" electrons that leave the chloroplasts are used to create
+    ATP & NADPH whom temporarily store energy, this is all supported by E.T.C.
+
+3 - After the E.T.C it is the start of C.C.
+    Plants will then use the energy that ATP & NADPH contain to build some
+    useful high-energy compounds. The C.C uses APT & NADPH from the light
+    dependent reactions to produce sugars.
+
+Well thats it! Photosynthesis really is that simple, and just don't forget about cellular respiration!
+Re-run the program and type "CR" to view information about cellular respiration!
+(If you just ran the command, remember to scroll up to see all the information...)

@@ -1,0 +1,42 @@
+<<<<<<< HEAD
+#+title: Miscellaneous
+=======
+* BIOLOGY PROJECT
+- Biology Rust Program
+This crate will explain photosynthesis & cellular respiration.
+(The project is supposed the act like someone's digital notebook which displays notes about Photosynthesis & C.R)
+
+* The setup
+You may need some things before you can run the program:
+- Git (not required)
+and that's it!
+
+** Running the program
+First you'll want to clone this repo on your machine, here will be the guide for Windows:
+*The Checklist:*
+- First install Git (https://git-scm.com/download/win, if you are going to download the zipped file this isn't required)
+- Then install Rust (not required)
+
+*Getting the files*
+
+Now either clone this repository via a Terminal on install the zipped file from clicking the Green Code dropdown button.
+
+*Cloning the repo (No zipped file)*
+#+begin_src sh
+git clone https://github.com/thelinuxpirate/bio_project
+#+end_src
+
+*Rust*
+If you don't have Rust installed, just know that it is not required in order to launch the application, but if you do want to install it go here:
+https://static.rust-lang.org/rustup/dist/x86_64-pc-windows-msvc/rustup-init.exe
+
+*** Launch The Program
+The program path is located at 
+#+begin_src
+target/release/bio_project
+#+end_src
+Either double click this file or launch it via a terminal:
+#+begin_src
+./bio_project/target/release/bio_project
+#+end_src
+>>>>>>> bio-project/main

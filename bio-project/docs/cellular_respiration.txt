@@ -1,0 +1,62 @@
++=================================+
+|< THIS IS CELLULAR RESPIRATION > |
+| ------------------------------  |
+|        \   ^__^                 |
+|         \  (oo)\_______         |
+|            (__)\       )\/\     |
+|                ||----w |        |
+|                ||     ||        |
++=================================+
+➜ Introduction:
+
+ What is Cellular Respiration (C.R)?
+Cellular respiration is the process by which biological fuels are oxidised in the presence of an
+"inorganic electron acceptor" such as oxygen to produce large amounts of energy.
+In shorter terms C.R is a neat way to get energy & coincides with photosynthesis.
+
+ C.R & Cellular Energy
+  - Animals use C.R to gain energy from food.
+  - C.R transfers energy from organic compounds into useable energy (ATP).
+
+ Metabolic Process
+
++= THERE ARE TWO TYPES OF C.R =+
+
+   1. Aerobic
+    - Requires Oxygen
+    - More Efficient
+
+   2. Anaerobic
+    - This Stage Is Exucuted When No Oxygen Is Available
+
+ The Stages of C.R
+
+  1. Glycolysis
+  2. Kerbs Cycle (K.C, & Oxygen is present)
+  3. Electron Transport Chain (E.T.C)
+
++= C.R STAGES EXPLAINED =+
+
+ 1. Glycolysis
+   - Breaks down glucose into "Pyruvate", then gains 2 ATP molecules
+   P.1 - Add 2 ATPs to glucose resulting in a 6-carbon compounds
+   P.2 - The 6-carbon compound is cut into 3-carbon compunds
+   P.3 - 2 NADPH molecules are made and a "Phosphate" is added to each compound
+   P.4 - Each of the 3-carbon compound is converted into a 3-carbon Pyruvate -> (Produces 4 ATP)
+
+ 2. K.C
+   - Oxygen is present, Pyruvate then enters the mitochondria
+   - Before the cycle even begins, Pyruvate is connected to a 2-carbon compound called "Acetyl"
+   - Through a series of reactions NADH and FADH2 are produced
+   - Much of the energy that was originally stored in glucose are stored in electro carriers
+
+ 3. E.T.C
+   - NADH & FADH2 are used to donate electrons
+   - Works similarly to the one in plants but...
+     - Water donates electrons in plants
+     - Water is made in animals
+     - and NAPHD is in plants
+
+Well thats it! I hope you read the blog about Photosynthesis first to know how connected the two are!
+Remember to type "P" to read about photosynthesis!
+(If you just ran the command, remember to scroll up to see all the information...)
