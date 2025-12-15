@@ -1,0 +1,264 @@
+# A Noob-Friendly I3-WM Configuration
+# Refer to 'http://i3wm.org/docs/userguide.html' for more information
+# `sudo apt install i3-wm i3blocks i3lock`
+
+# TRONG'S NOTE
+# Lines that start with a '#' are known as a "comment" when it comes to configuring
+# these comments are NOT read by the computer. This is useful when you want to
+# document certain parts of your configuration (which youll see a lot).
+
+# Recommended programs:
+# Kitty - Terminal
+# GNU Nano - Text Editor
+# Dmenu - Application Launcher
+# Firefox - Web Browser
+# Thunar - File Manager
+# Feh - Wallpaper Setter
+# Dunst - PC Notifications
+# Picom - Window Transparency
+# Flameshot - Screenshot Tool
+# Fastfetch - OS Info Tool
+# I3Lock - Lockscreen
+
+# ----------------------------------------------------------------------------------------- #
+# Autostart
+# Programs to be launched at the start of I3:
+exec_always nm-applet
+exec_always dunst
+exec_always flameshot
+exec_always picom --daemon
+exec_always feh --bg-fill ~/.config/i3/wallpapers/Tower.png
+
+# Enable & run statusbar
+bar {
+    height 30
+    # Can change to 'top'
+    position bottom
+    tray_padding 1
+    status_command i3blocks
+
+
+    colors {
+            separator  #1f222d
+            background #1f222d
+            statusline #81a1c1
+
+            #                   border backgr. text
+            focused_workspace  #1f222d #1f222d #81a1c1
+            active_workspace   #1f222d #252936 #5e81ac
+            inactive_workspace #1f222d #1f222d #4c566a
+            urgent_workspace   #1f222d #1f222d #ee829f
+            binding_mode       #1f222d #81a1c1 #2e3440
+    }
+}
+
+# I3 ColorScheme
+# class                 border  backgr. text    indicator
+client.focused          #81a1c1 #81a1c1 #ffffff #81a1c1
+client.unfocused        #2e3440 #1f222d #888888 #1f222d
+client.focused_inactive #2e3440 #1f222d #888888 #1f222d
+client.placeholder      #2e3440 #1f222d #888888 #1f222d
+client.urgent           #900000 #900000 #ffffff #900000
+client.background       #242424
+
+# Sets the Mod Key; this key will be the main key used in your keybindings
+# 'Mod4' is the Windows key; this can be changed to 'Mod1' Alt Key
+set $mod Mod4
+# Use $mod+Mouse to drag floating windows to their wanted position
+floating_modifier $mod
+
+# Here you can declare 'variables' which are pieces of data
+# stored into the computers memory. We can use variables to store
+# commonly-used programs or commands
+
+# set $variableName program
+
+set $myTerm kitty
+set $myBrowser firefox
+# ----------------------------------------------------------------------------------------- #
+
+# MISC
+# Miscellaous I3 settings can go here
+
+# Font used for window titles.
+# Will also be used by the bar unless a different font is specified
+font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+
+# The font above is the default ^^^
+# Described as: 'very space-efficient, looks good, sharp & clear in small sizes'
+# However, if you need a lot of unicode glyphs or right-to-left text rendering,
+# you should instead use 'pango' for rendering
+# font pango:DejaVu Sans Mono 10 # Uncomment this line if youd like to have glyphs rendering
+
+# GAPS (https://i3wm.org/docs/userguide.html#gaps)
+# I3 now has support for window gaps which can make I3 look a bit more clean
+# Configure space between windows & screen edges
+gaps inner 5
+
+# Configure an additional pxs of extra space to the screen edges,
+# for a total gap of 10px to the screen edges, and 5px between windows.
+gaps outer 3
+
+# You can overwrite gaps for workspaces
+# Workspace 3 has NO gaps whatsoever
+# workspace 3 gaps inner 0
+# workspace 3 gaps outer 0
+
+# smart_gaps inverse_outer # Only enable outer gaps when there is exactly one window
+
+# Window Borders
+default_border normal 3
+default_border pixel 3
+default_floating_border normal 3
+default_floating_border pixel 3
+
+# Window Rules
+# Rules for specific windows (set to floating/tiling example)
+for_window [class="Gimp"] floating enable
+for_window [class=Key-mon] floating enable, border none
+# assign [class="Firefox"] 2 # If firefox is opened, open the window in Workspace two
+# no_focus [window_role="pop-up"] # Dont focus onto window pop-ups 
+# ----------------------------------------------------------------------------------------- #
+
+# KEYBINDINGS
+# The 'bindsym' keyword is used to define a keybind
+# These keybinds will nearly always start with the modifier key
+# I3's window management is purely handeled through keybindings (mouse support is included)
+
+bindsym $mod+Return exec $myTerm # Launches variable 'myTerm'
+bindsym $mod+d exec dmenu_run # Start dmenu (program launcher)
+bindsym $mod+Shift+o exec i3lock # Executes lockscreen
+
+# Promts a waring to exit the current I3 session
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+# Kill focused window
+bindsym $mod+Shift+q kill
+# Reloads the configuration file in the current session
+bindsym $mod+Shift+c reload
+# Restarts I3 (use this if you encounter issues or want to upgrade I3)
+bindsym $mod+Shift+r restart
+
+# Switch focus between windows
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+# Same as above but with arrow keys
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# Move active window
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+
+# Same as above but with arrow keys
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# Switch focus to parent window
+bindsym $mod+a focus parent
+# Switch focus the child window
+bindsym $mod+c focus child
+
+# Split window orientation: Horizontal
+bindsym $mod+Shift+v split h
+# Split window orientation: Vertical
+bindsym $mod+v split v
+
+# Fullscreen active window
+bindsym $mod+f fullscreen
+# Toggles current window between Tiling/Floating
+bindsym $mod+Shift+space floating toggle
+# Toggles bar visability
+bindsym $mod+b bar mode toggle 
+
+# Change I3's layout between:
+# (Stacked, Tabbed, Toggle split)
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+bindsym $mod+space focus mode_toggle
+# ^^^ Toggles between Tiling windows & Floating
+
+# Switch to workspace (you can have more than 10 workspaes)
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
+bindsym $mod+6 workspace 6
+bindsym $mod+7 workspace 7
+bindsym $mod+8 workspace 8
+bindsym $mod+9 workspace 9
+bindsym $mod+0 workspace 10
+# Move focused window to workspace
+bindsym $mod+Shift+1 move container to workspace 1
+bindsym $mod+Shift+2 move container to workspace 2
+bindsym $mod+Shift+3 move container to workspace 3
+bindsym $mod+Shift+4 move container to workspace 4
+bindsym $mod+Shift+5 move container to workspace 5
+bindsym $mod+Shift+6 move container to workspace 6
+bindsym $mod+Shift+7 move container to workspace 7
+bindsym $mod+Shift+8 move container to workspace 8
+bindsym $mod+Shift+9 move container to workspace 9
+bindsym $mod+Shift+0 move container to workspace 10
+
+# XF86 Media Keys (https://wiki.linuxquestions.org/wiki/XF86_keyboard_symbols)
+# Volume Management (+2,-2 by default)
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer set Master 2%+
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer set Master 2%-
+bindsym XF86AudioMute exec --no-startup-id amixer set Master toggle
+# Audio Player Management (can be used with Spotify) 
+bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
+bindsym XF86AudioNext exec --no-startup-id playerctl next
+bindsym XF86AudioPrev exec --no-startup-id playerctl previous
+# Laptop Brightness Management
+bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +200
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 200-
+# ----------------------------------------------------------------------------------------- #
+
+# MODES
+
+# You can have multiple sets of bindings by using different binding modes. 
+# When you switch to another binding mode, all bindings from the current mode are released
+# only the bindings defined in the new mode are valid for as long as you stay in that binding mode
+
+# ----------------------------------------------------------------------------------------- #
+# A mode to resize windows
+mode "resize" {
+        # 'h,j,k,l & up,down,left,right' will resize windows
+        bindsym h resize shrink width 10 px or 10 ppt
+        bindsym j resize grow height 10 px or 10 ppt
+        bindsym k resize shrink height 10 px or 10 ppt
+        bindsym l resize grow width 10 px or 10 ppt
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
+
+        # Enter or ESC to quit
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+# Declares 'resize' mode
+bindsym $mod+r mode "resize"
+
+# Example mode from 'https://i3wm.org/docs/userguide.html#binding_modes'
+# Press $mod+o followed by either f, t, Escape or Return to launch firefox,
+# thunderbird or return to the default mode, respectively.
+# set $mode_launcher Launch: [f]irefox [t]hunderbird
+# bindsym $mod+o mode "$mode_launcher"
+
+# mode "$mode_launcher" {
+#    bindsym f exec firefox
+#    bindsym t exec thunderbird
+#    bindsym Escape mode "default"
+#    bindsym Return mode "default"
+# }

@@ -1,0 +1,37 @@
+# Basic Syntax Support
+include ~/.config/nano/syntax/go.nanorc
+include ~/.config/nano/syntax/i3.nanorc
+include ~/.config/nano/syntax/sh.nanorc
+include ~/.config/nano/syntax/css.nanorc
+include ~/.config/nano/syntax/git.nanorc
+include ~/.config/nano/syntax/lua.nanorc
+include ~/.config/nano/syntax/man.nanorc
+include ~/.config/nano/syntax/markdown.nanorc
+include ~/.config/nano/syntax/xml.nanorc
+include ~/.config/nano/syntax/conf.nanorc
+include ~/.config/nano/syntax/json.nanorc
+include ~/.config/nano/syntax/perl.nanorc
+include ~/.config/nano/syntax/ruby.nanorc
+include ~/.config/nano/syntax/toml.nanorc
+include ~/.config/nano/syntax/yaml.nanorc
+include ~/.config/nano/syntax/cmake.nanorc
+include ~/.config/nano/syntax/patch.nanorc
+include ~/.config/nano/syntax/python.nanorc
+include ~/.config/nano/syntax/systemd.nanorc
+include ~/.config/nano/syntax/x11basic.nanorc
+
+set autoindent # autoindent support for files
+set boldtext # allows boldtext 
+set historylog # saves search strings
+set linenumbers # displays line numbers
+set mouse # adds mouse support
+set positionlog # saves the cursor postion of edited files
+set nonewlines # if a file doesnt end with a new line, dont add one
+set showcursor # highlights cursor position
+set smarthome # homekey acts better
+set softwrap # enables line wrapping
+set tabsize 2 # 2 space tab
+set tabstospaces # converts tabs to spaces
+set trimblanks # removes trailing whitespace
+#set constantshow # display cursor postion info at ALL times
+#set nohelp # removes keybindings list
